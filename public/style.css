@@ -1,0 +1,30 @@
+html {
+}
+
+body {
+    text-align: center;
+    zoom: 1.5;
+}
+
+#login_failure, #login_success{
+    display: none;
+    z-index: 100;
+}
+
+#modal_login, #modal_video {
+    z-index: 0;
+}
+
+#modal_video {
+    display: none;
+}
+
+.modal input {
+    padding: 10px;
+    border: solid black 1px;
+    background-color: white;
+}
+
+.modal video {
+    max-width: 100%;
+}

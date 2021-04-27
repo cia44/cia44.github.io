@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>CIA du 44</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="login_failure" class="alert alert-danger" role="alert">
+                !! ACCÈS REFUSÉ !!
+            </div>
+            <div id="login_success" class="alert alert-success" role="alert">
+                !! ACCÈS AUTORISÉ !!
+            </div>
+            <div id="modal_login" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Accès sécurisé</h5>
+                        </div>
+                        <div class="modal-body">
+                            <label for="input_login">Entrez votre identifiant d'agent : </label>
+                            <input type="input_login" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Connexion</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal_video" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">video.mp4</h5>
+                        </div>
+                        <div class="modal-body">
+                            <video src="video.mp4" preload="auto"></video>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="crypt" type="button" class="btn btn-primary">Voir le message crypté</button>
+                            <button id="play" type="button" class="btn btn-primary">Lire la video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal_crypt" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">message crypté</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="crypt1.png">
+                            <img src="crypt2.png">
+                        </div>
+                        <div class="modal-footer">
+                                <input id="crypt1" type="text" />
+                                -
+                                <input id="crypt2" type="text" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal_finish" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">décryptage en cours</h5>
+                        </div>
+                        <div class="modal-body">
+                            DECRYPTAGE <span id="progress">0</span>0%.
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-success" href="https://doodle.com/poll/8ukku9eex9sqq7s3?utm_source=poll&utm_medium=link">Voir le message</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="sentry.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
